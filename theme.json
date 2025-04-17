@@ -1,15 +1,13 @@
 {
   "name": "Percentages",
   "author": "Elfener",
-  "version": "1.1.0",
+  "target": "Tweak",
   "manifest_version": 8,
+  "description": "Add percentage readouts to volume and brightness sliders in the quick settings menu, the settings, and the volume notification.",
+  "version": "1.2.0",
   "inject": {
-    "quicksettings.css": [
-      "QuickAccess"
-    ],
-    "bigpicture.css": [
-      "bigpicture"
-    ]
+    "quicksettings.css": ["QuickAccess"],
+    "bigpicture.css": ["bigpicture"]
   },
   "id": "7d62afa2-81d0-49e8-9146-935e6e7cb7e8"
 }
