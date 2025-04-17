@@ -1,0 +1,13 @@
+/* Add percentage readout based on --normalized-slider-value to every 
+slider */
+.PagedSettingDialog_ContentColumn div:has(> .SliderControl)::after /* in the settings menu */,
+.audio_VolumePopin div:has(> .SliderControl)::after /* in the volume notification */ {
+  counter-reset: value calc(var(--normalized-slider-value) * 100);
+  content: counter(value) "%";
+}
+/* don't do it for the magnifier scale and the trackpad typing sensitivity, they already have numbers */
+.PagedSettingDialog_ContentColumn
+  .DialogControlsSection:last-child
+  div:has(> .SliderControl)::after {
+  content: none;
+}

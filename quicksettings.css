@@ -1,0 +1,6 @@
+/* Add percentage readout based on --normalized-slider-value to 
+every slider in the quick settings */
+.tab_Settings div:has(> .SliderControl)::after {
+  counter-reset: value calc(var(--normalized-slider-value) * 100);
+  content: counter(value) "%";
+}
