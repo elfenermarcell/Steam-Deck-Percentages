@@ -8,6 +8,7 @@ slider */
 /* don't do it for the magnifier scale and the trackpad typing sensitivity, they already have numbers */
 .PagedSettingDialog_ContentColumn
   .DialogControlsSection:last-child
+  > .Panel:nth-child(3)
   div:has(> .SliderControl)::after {
   content: none;
 }
