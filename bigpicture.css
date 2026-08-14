@@ -1,5 +1,4 @@
-/* Add percentage readout based on --normalized-slider-value to every 
-slider */
+/* Add percentage readout based on --normalized-slider-value to every slider */
 .PagedSettingDialog_ContentColumn div:has(> .SliderControl)::after /* in the settings menu */,
 .audio_VolumePopin div:has(> .SliderControl)::after /* in the volume notification */ {
   counter-reset: value calc(var(--normalized-slider-value) * 100);
