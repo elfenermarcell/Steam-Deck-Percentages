@@ -4,7 +4,7 @@
   "target": "Tweak",
   "manifest_version": 8,
   "description": "Add percentage readouts to volume and brightness sliders in the quick settings menu, the settings, and the volume notification.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "inject": {
     "quicksettings.css": ["QuickAccess"],
     "bigpicture.css": ["bigpicture"]
